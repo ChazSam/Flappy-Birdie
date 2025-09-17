@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=3 uid="uid://dqx22uqlfkie3"]
+
+[ext_resource type="Texture2D" uid="uid://dln08kxe71sjd" path="res://Assets/Game Objects/base.png" id="1_yh8r4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t7tip"]
+size = Vector2(1344, 111)
+
+[node name="Area2D" type="Area2D"]
+z_index = 1
+
+[node name="Base" type="Sprite2D" parent="."]
+position = Vector2(117, 591)
+texture = ExtResource("1_yh8r4")
+
+[node name="Base2" type="Sprite2D" parent="."]
+position = Vector2(453, 591)
+texture = ExtResource("1_yh8r4")
+
+[node name="Base3" type="Sprite2D" parent="."]
+position = Vector2(789, 591)
+texture = ExtResource("1_yh8r4")
+
+[node name="Base4" type="Sprite2D" parent="."]
+position = Vector2(1125, 591)
+texture = ExtResource("1_yh8r4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(620, 591.5)
+shape = SubResource("RectangleShape2D_t7tip")

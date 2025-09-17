@@ -1,0 +1,41 @@
+[gd_scene load_steps=3 format=3 uid="uid://ciwm1w6ym6yj"]
+
+[ext_resource type="PackedScene" uid="uid://dqx22uqlfkie3" path="res://Scenes/ground.tscn" id="1_bo1nx"]
+[ext_resource type="Texture2D" uid="uid://trrtfqr4oip3" path="res://Assets/Game Objects/background-day.png" id="2_8gbba"]
+
+[node name="Main" type="Node2D"]
+
+[node name="Ground" parent="." instance=ExtResource("1_bo1nx")]
+position = Vector2(-176, -185)
+scale = Vector2(1.2986112, 1.2986112)
+
+[node name="Background" type="Node2D" parent="."]
+z_index = -1
+
+[node name="BackgroundDay" type="Sprite2D" parent="Background"]
+z_index = -1
+position = Vector2(63, 323)
+scale = Vector2(1.2986112, 1.2986112)
+texture = ExtResource("2_8gbba")
+metadata/_edit_lock_ = true
+
+[node name="BackgroundDay2" type="Sprite2D" parent="Background"]
+z_index = -1
+position = Vector2(421, 323)
+scale = Vector2(1.2986112, 1.2986112)
+texture = ExtResource("2_8gbba")
+metadata/_edit_lock_ = true
+
+[node name="BackgroundDay3" type="Sprite2D" parent="Background"]
+z_index = -1
+position = Vector2(692, 323)
+scale = Vector2(1.2986112, 1.2986112)
+texture = ExtResource("2_8gbba")
+metadata/_edit_lock_ = true
+
+[node name="BackgroundDay4" type="Sprite2D" parent="Background"]
+z_index = -1
+position = Vector2(1050, 323)
+scale = Vector2(1.2986112, 1.2986112)
+texture = ExtResource("2_8gbba")
+metadata/_edit_lock_ = true
